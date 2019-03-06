@@ -55,9 +55,17 @@ provider:
 #    - exclude-me-dir/**
 
 functions:
-  hello:
-    handler: handler.hello
-
+  # sendemail:
+  #   handler: handler.send
+  #   events:
+  #     - http:
+  #       path: handler/send
+  #       method: post
+  #       cors: true
+  test:
+    handler: handler.test
+    events:
+      - http: GET test
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
