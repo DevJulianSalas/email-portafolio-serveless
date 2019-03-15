@@ -46,22 +46,21 @@ provider:
 #    variable1: value1
 
 # you can add packaging information here
-#package:
-#  include:
-#    - include-me.js
-#    - include-me-dir/**
+package:
+ include:
+   - node_modules/**
 #  exclude:
 #    - exclude-me.js
 #    - exclude-me-dir/**
 
 functions:
-  # sendemail:
-  #   handler: handler.send
-  #   events:
-  #     - http:
-  #       path: handler/send
-  #       method: post
-  #       cors: true
+  sendemail:
+    handler: handler.send
+    events:
+      - http:
+          path: send
+          method: post
+          cors: true
   test:
     handler: handler.test
     events:

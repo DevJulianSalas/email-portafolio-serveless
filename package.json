@@ -1,0 +1,15 @@
+{
+  "name": "email-portafolio-serveless",
+  "version": "1.0.0",
+  "description": "A serveless service to send emails",
+  "repository": "git@github.com:DevJulianSalas/email-portafolio-serveless.git",
+  "author": "Julian Salas <juliansalas080@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "Serveless",
+    "Email"
+  ],
+  "dependencies": {
+    "nodemailer": "^5.1.1"
+  }
+}
